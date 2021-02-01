@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet');
+*{
+padding : 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html {
+font-size : 10px;
+font-family: 'Montserrat' ,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+p
+{
+    font-size: 14px; /* Paragraphes de 14 pixels */
+}
+h2
+{
+    font-size: 20px; /* Titres de 40 pixels */
+    font-style: oblique;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float:right;
+}
+
+li a {
+    display: block;
+    color:violet;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+aside {
+    width: 10%;
+   
+    float: right;
+   
+    
+}
+
+
+.container{
+
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items:center;
+justify-content: center;
+
+}
+
+#pg1{
+     background-image: url("../image/img6.jpg");
+    background-size: cover;
+    background-position:inherit;
+    position: relative;
+
+}
+#pg1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;opacity: -7;
+    z-index:-1;
+
+}
+#pg1 h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color:white;
+
+}
+#pg1 .cta{
+    display: inline-block;
+    padding:  10px 30px;
+    color:white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease ;
+ transition-property: background-color ,color;
+}
+
+#pg1 .cta:hover {
+    color: white;
+    background-color: crimson;
+}
